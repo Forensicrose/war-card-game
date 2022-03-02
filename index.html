@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap"
+      rel="stylesheet"
+    />
+    <link href="index.css" rel="stylesheet" />
+    <title>War</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="score-wrapper">
+          <div id="score" class="score">
+            <p id="computerScore" class="computerScore"></p>
+            <p1 id="myScore" class="myScore"></p1>
+          </div>
+        <div class="remaining-card-text">
+          <p id="number-of-cards" class="number-of-cards"></p>
+        </div>
+
+     
+      </div>
+      <h2 id="header" class="header">This means War!</h2>
+      <div id="cards" class="cards">
+        <div class="card-position"></div>
+        <div class="card-position"></div>
+      </div>
+
+      <div class="btn-container">
+        <button id="new-deck" class="btn deck-btn">Shuffle</button>
+        <button id="draw-card" class="btn draw-btn">Draw Card</button>
+        <button id="reset" class="btn reset-btn">Play Again</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

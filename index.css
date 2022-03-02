@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  color: #fff;
+  font-family: 'Gideon Roman', cursive, serif;
+  background-image: url(./images/cards.jpg);
+  background-position: center;
+  background-color: #36454f;
+  background-blend-mode: multiply;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+.score-wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+  margin-top: 0;
+  width: 100%;
+}
+
+.number-of-cards {
+  margin-right: 20px;
+}
+
+.score {
+  margin-left: 20px;
+}
+
+.number-of-cards,
+.computerScore,
+.myScore {
+  background: -webkit-linear-gradient(#db7093, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.header {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+.btn {
+  font-size: 1.2rem;
+  font-family: inherit;
+  color: inherit;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.75em 1.5em;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+}
+
+.deck-btn {
+  font-size: 4rem;
+  color: #36454f;
+  position: absolute;
+  top: 35%;
+  padding-right: 6em;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+#new-deck {
+  background: linear-gradient(to right, #db7093, #f4c2c2, #36454f);
+}
+
+.draw-btn {
+  margin-left: 1em;
+  background: linear-gradient(to right, #36454f, #db7093);
+}
+
+.reset-btn {
+  margin-left: 1em;
+  background: linear-gradient(to right, #36454f, #f4c2c2);
+}
+
+.draw-btn,
+.reset-btn,
+.header {
+  display: none;
+}
+
+.draw-btn:disabled,
+#new-deck:disabled,
+.reset-btn:disabled {
+  color: #d3d3d3;
+  cursor: not-allowed;
+  background: #36454f;
+}
+
+.cards {
+  display: flex;
+  margin-bottom: 2em;
+}
+
+.card-position {
+  height: 300px;
+  width: calc(300px * 5 / 7);
+}
+
+div.card-position:nth-of-type(1) {
+  margin-right: 4em;
+}
+
+@media (max-width: 500px) {
+  .cards {
+    flex-direction: column;
+    margin-left: 50px;
+  }
+
+  .header {
+    margin: 2em 0;
+    font-size: 2rem;
+  }
+
+  .score-wrapper {
+    margin-top: 80px;
+    font-size: 1.75rem;
+  }
+
+  .card-position {
+    height: 250px;
+    width: calc(250px * 5 / 7);
+  }
+
+  div.card-position:nth-of-type(1) {
+    margin-bottom: 1em;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.5em 1.25em;
+    margin-bottom: 1em;
+  }
+
+  .deck-btn {
+    font-size: 2.5rem;
+  }
+
+  img {
+    width: 100%;
+  }
+}
